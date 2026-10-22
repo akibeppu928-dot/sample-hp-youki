@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MINATO PACK ミナトパック | 食品容器の卸売(サンプルサイト)</title>
+<meta name="description" content="飲食店・テイクアウト店向けの食品容器を小ロットから。架空の会社を題材にしたホームページ制作のサンプルです。">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230f1419'/%3E%3Cg transform='translate(4 4) scale(.67)' fill='none' stroke='%23ee6a2e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2.8l8 4.6v9.2l-8 4.6-8-4.6V7.4l8-4.6z'/%3E%3Cpath d='M4 7.4l8 4.6 8-4.6M12 12v9.2'/%3E%3C/g%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MINATO PACK ミナトパック | 食品容器の卸売(サンプルサイト)">
+<meta property="og:description" content="飲食店・テイクアウト店向けの食品容器を小ロットから。架空の会社を題材にしたホームページ制作のサンプルです。">
+<meta property="og:url" content="https://sample-hp-youki.vercel.app">
+<meta property="og:image" content="https://sample-hp-youki.vercel.app/images/ogp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Zen+Kaku+Gothic+New:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#17324d;--navy-2:#234766;--accent:#e07a2f;--accent-deep:#c4651f;--bg:#faf8f5;--card:#fff;--line:#e4ded5;--text:#26323d;--soft:#667482}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;color:var(--text);background:var(--bg);line-height:1.8;font-size:16px;word-break:auto-phrase;text-wrap:pretty}
+img,svg{max-width:100%}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+h2{font-size:26px;color:var(--navy);margin-bottom:8px;letter-spacing:.02em}
+.lead{color:var(--soft);margin-bottom:36px}
+.eyebrow{display:block;font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--accent-deep);margin-bottom:6px}
+.sample{background:var(--navy);color:#fff;font-size:12px;text-align:center;padding:6px 12px}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900;color:var(--navy);text-decoration:none;font-size:24px;letter-spacing:.04em}
+.logo svg{width:40px;height:40px;padding:8px;border-radius:12px;background:var(--accent);stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+nav{display:flex;align-items:center;gap:22px;font-size:14px}
+nav a{text-decoration:none;color:var(--text)}
+.links{display:flex;align-items:center;gap:22px}
+.menu-btn{display:none}
+nav a:hover{color:var(--accent-deep)}
+.btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;text-decoration:none;padding:12px 26px;border-radius:999px;border:0;font:inherit;font-weight:700;cursor:pointer;transition:background .2s}
+.btn:hover{background:var(--accent-deep)}
+.btn.ghost{background:none;border:1.5px solid #fff;color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+nav .btn{padding:8px 20px;font-size:14px;color:#fff}
+.hero{background:linear-gradient(90deg,rgba(23,50,77,.9) 0%,rgba(23,50,77,.68) 45%,rgba(23,50,77,.22) 100%),url(images/hero-bg.jpg) center/cover no-repeat,var(--navy);color:#fff;padding:88px 0 80px}
+.hero h1{font-size:38px;line-height:1.5;margin-bottom:18px;letter-spacing:.02em}
+.hero p{text-shadow:0 1px 10px rgba(10,25,40,.7);max-width:560px;color:#d5e0ea;margin-bottom:30px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px}
+.grid{display:grid;gap:20px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 22px}
+.card h3{font-size:17px;color:var(--navy);margin:12px 0 6px}
+.card p{font-size:14px;color:var(--soft)}
+.ic{width:44px;height:44px;border-radius:12px;background:#fdeee0;display:flex;align-items:center;justify-content:center}
+.ic svg{width:24px;height:24px;stroke:var(--accent-deep);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.step{position:relative;padding:22px;border-radius:14px;background:var(--bg);border:1px solid var(--line)}
+.step::before{counter-increment:s;content:"STEP " counter(s);display:block;font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--accent-deep);margin-bottom:6px}
+.step h3{font-size:16px;color:var(--navy);margin-bottom:4px}
+.step p{font-size:14px;color:var(--soft)}
+dl.co{display:grid;grid-template-columns:150px 1fr;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+dl.co dt,dl.co dd{padding:14px 20px;border-bottom:1px solid var(--line)}
+dl.co dt{background:#f4efe8;font-weight:700;color:var(--navy);font-size:14px}
+dl.co dt:last-of-type,dl.co dd:last-of-type{border-bottom:0}
+form{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;max-width:640px}
+.f{margin-bottom:18px}
+label{display:block;font-weight:700;font-size:14px;margin-bottom:6px;color:var(--navy)}
+label .req{color:var(--accent-deep);font-size:12px;margin-left:6px}
+input,select,textarea{width:100%;font:inherit;font-size:16px;padding:11px 14px;border:1px solid #cfc8bd;border-radius:10px;background:#fff;color:var(--text)}
+textarea{min-height:130px;resize:vertical}
+input:focus,select:focus,textarea:focus,.btn:focus-visible,a:focus-visible{outline:3px solid rgba(224,122,47,.45);outline-offset:2px}
+.err{color:#b3261e;font-size:13px;margin-top:4px;min-height:1em}
+.thanks{display:none;background:#eaf6ee;border:1px solid #b5dcc1;color:#1e5b32;border-radius:10px;padding:16px;margin-top:18px;font-size:14px}
+.note{font-size:12px;color:var(--soft);margin-top:12px}
+footer{background:var(--navy);color:#b9c8d6;line-height:1.9;text-align:center;padding:28px 20px;font-size:13px}
+.pc{display:block;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s,border-color .2s}
+.pc:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(23,50,77,.1);border-color:var(--accent)}
+.more{display:block;margin-top:12px;font-size:13px;font-weight:700;color:var(--accent-deep)}
+.dt{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 22px;margin-bottom:18px;scroll-margin-top:80px}
+.dt h3{color:var(--navy);font-size:19px;margin-bottom:10px}
+.dt ul{list-style:none;margin-bottom:16px}
+.dt li{display:flex;flex-wrap:wrap;gap:4px 16px;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+.dt li span{color:var(--soft)}
+h1,h2,h3,.logo,.btn,.more,.step::before,.eyebrow{font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif}
+.hero h1{font-weight:900;font-size:clamp(24px,3.4vw,36px);line-height:1.5;letter-spacing:.01em;text-shadow:0 2px 14px rgba(0,0,0,.25)}
+.hero h1 em{font-style:normal;color:#ffb066;background:linear-gradient(transparent 72%,rgba(224,122,47,.55) 72%);padding:0 .1em}
+.nb{display:block}
+.hero h1.anim .ch{display:inline-block;opacity:0;transform:translateY(.7em);animation:rise .6s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--i) * 45ms)}
+.hero h1.anim em{color:#fff;background:linear-gradient(rgba(224,122,47,.6),rgba(224,122,47,.6)) no-repeat left 94%/0% 30%;animation:mark .7s ease-out forwards,hl .5s ease-out forwards;animation-delay:var(--md),var(--md)}
+@keyframes rise{to{opacity:1;transform:none}}
+@keyframes mark{to{background-size:100% 30%}}
+@keyframes hl{to{color:#ffb066}}
+
+h2{font-weight:900;font-size:30px}
+.card h3,.step h3,.dt h3{font-weight:700}
+.btn{font-weight:900;font-size:17px;padding:14px 32px;letter-spacing:.04em;box-shadow:0 6px 16px rgba(224,122,47,.35)}
+.btn.ghost{box-shadow:none}
+nav .btn{font-size:14px;padding:8px 20px;box-shadow:none}
+.hero-in{display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:center}
+.slider{position:relative}
+.slides{position:relative;aspect-ratio:4/3;background:#e9e4dc;border-radius:24px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.25)}
+.slide{position:absolute;inset:0;margin:0;opacity:0;transition:opacity .7s ease;display:flex;align-items:center;justify-content:center}
+.slide.on{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1);transition:transform 6s ease-out}
+.slide.on img{transform:scale(1.06)}
+.slide figcaption{position:absolute;left:16px;bottom:14px;background:var(--navy);color:#fff;font-size:13px;font-weight:700;padding:4px 14px;border-radius:999px}
+.dots{display:flex;justify-content:center;gap:0;margin-top:6px}
+.dot{position:relative;width:44px;height:44px;border:0;background:none;cursor:pointer;padding:0}
+.dot::after{content:"";position:absolute;inset:16px;border-radius:50%;background:rgba(255,255,255,.4);transition:background .2s,transform .2s}
+.dot.on::after{background:var(--accent);transform:scale(1.25)}
+.dot:focus-visible{outline:3px solid #fff;outline-offset:-6px;border-radius:50%}
+.stats{background:#fff;border-bottom:1px solid var(--line);padding:30px 0}
+.stat{text-align:center;font-size:13px;color:var(--soft)}
+.stat b{display:block;font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif;font-size:36px;font-weight:900;color:var(--accent-deep);line-height:1.3}
+.stat small{font-size:15px;font-weight:700;margin-left:2px}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+.pc.rv.in:hover{transform:translateY(-3px)}
+@media(max-width:860px){.hero-in{grid-template-columns:1fr}.stat b{font-size:28px}.stats .g3{grid-template-columns:repeat(3,1fr);gap:8px}.stat{font-size:11px}.stat b{font-size:22px}}
+@media(prefers-reduced-motion:reduce){.slide.on img{transform:none}.slide{transition:none}.rv{opacity:1;transform:none;transition:none}}
+@media(max-width:860px){
+  .g4,.steps{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:1fr}
+  .hero h1{font-size:32px}
+}
+@media(max-width:600px){
+  section{padding:52px 0}
+  nav{gap:8px}
+  nav .btn{padding:8px 14px;font-size:13px}
+  .logo{gap:8px;white-space:nowrap}
+  nav .btn{white-space:nowrap}
+  .menu-btn{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;padding:0;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--navy);cursor:pointer}
+  .menu-btn svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round}
+  .menu-btn .cross{display:none}
+  header.open .menu-btn .bars{display:none}
+  header.open .menu-btn .cross{display:inline}
+  .links{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:rgba(255,255,255,.98);border-bottom:1px solid var(--line);box-shadow:0 12px 24px rgba(23,50,77,.12)}
+  header.open .links{display:flex}
+  .links a{padding:15px 20px;font-size:15px;font-weight:700;color:var(--navy);border-top:1px solid var(--line)}
+  .logo{font-size:20px}.logo svg{width:34px;height:34px;padding:6px}
+  .g4,.steps{grid-template-columns:1fr}
+  .hero{padding:60px 0;background:linear-gradient(180deg,rgba(23,50,77,.82),rgba(23,50,77,.6)),url(images/hero-bg.jpg) 70% center/cover no-repeat,var(--navy)}
+  .hero h1{font-size:clamp(17px,4.9vw,26px)}
+  dl.co{grid-template-columns:1fr}
+  dl.co dt{border-bottom:0;padding-bottom:4px}
+  dl.co dd{padding-top:0}
+  form{padding:20px}
+}
+@media(max-width:400px){.logo{font-size:17px}.logo svg{width:30px;height:30px;padding:5px}nav .btn{padding:8px 11px;font-size:12px}}
+@media(max-width:340px){.logo{font-size:15px;gap:6px}.logo svg{width:26px;height:26px;padding:4px}nav{gap:6px}nav .btn{padding:7px 9px;font-size:11px}.menu-btn{width:36px;height:36px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+footer a{color:#e8c9a8}
+.svc{padding:44px 0;background:var(--bg)}
+.svc .card{padding:20px 18px;display:flex;gap:14px;align-items:flex-start}
+.svc .card h3{margin:0 0 2px;font-size:15px}
+.svc .card p{font-size:13px;line-height:1.7}
+.svc .ic{flex:none}
+.cnt-tag{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;color:var(--navy-2);background:#eef2f6;border-radius:999px;padding:1px 10px}
+ul.news{list-style:none;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+ul.news li{display:flex;gap:6px 20px;align-items:baseline;padding:16px 20px;border-bottom:1px solid var(--line);font-size:14px}
+ul.news li:last-child{border-bottom:0}
+ul.news time{flex:none;color:var(--soft);font-size:13px;font-variant-numeric:tabular-nums}
+ul.news .tag{flex:none;font-size:11px;font-weight:700;color:var(--accent-deep);background:#fdeee0;border-radius:999px;padding:1px 10px}
+@media(max-width:600px){ul.news li{flex-wrap:wrap}ul.news li span.t{flex-basis:100%}}
+
+/* ---- v2: modern refresh ---- */
+:root{--navy:#0f1419;--navy-2:#1c2530;--accent:#ee6a2e;--accent-deep:#d4561b;--bg:#f6f4f0;--line:#e2ded6;--text:#1f2630;--soft:#6b7580}
+body{font-weight:400;letter-spacing:.01em}
+h1,h2,h3,.logo,.btn,.more,.step::before,.eyebrow,.stat b{font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif}
+.lt b,.eyebrow,.step::before{font-family:"Syne","Zen Kaku Gothic New",sans-serif}
+.sample{background:#000;color:#c9ced4;font-size:11px;letter-spacing:.06em}
+header{background:rgba(246,244,240,.88);border-bottom:1px solid var(--line)}
+.logo{gap:12px;font-weight:600}
+.logo svg{border-radius:8px;background:var(--navy);stroke:var(--accent);stroke-width:1.6;padding:8px}
+.lt{display:flex;flex-direction:column;line-height:1.1}
+.lt b{font-size:19px;font-weight:800;letter-spacing:.1em}
+.lt small{font-size:10px;font-weight:500;letter-spacing:.3em;color:var(--soft);margin-top:3px;font-family:"Zen Kaku Gothic New",sans-serif}
+nav a{font-size:13px;font-weight:500;letter-spacing:.06em}
+.hero{background:linear-gradient(100deg,rgba(15,20,25,.94) 0%,rgba(15,20,25,.78) 50%,rgba(15,20,25,.35) 100%),url(images/hero-bg.jpg) center/cover no-repeat,var(--navy);padding:112px 0 100px}
+.hero h1,h2{font-weight:700}
+.hero h1{font-size:clamp(24px,3vw,38px);line-height:1.45;letter-spacing:.02em;text-shadow:none}
+.hero h1 em{color:#ff9a5c}
+.hero p{color:#c9d1d9;letter-spacing:.03em}
+.slides{border-radius:6px;box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.slide figcaption{background:rgba(15,20,25,.85);border-radius:3px;font-weight:500;letter-spacing:.1em;font-size:12px}
+.btn{font-weight:600;font-size:15px;letter-spacing:.08em;padding:14px 34px;border-radius:3px;box-shadow:none}
+.btn.ghost{border:1px solid rgba(255,255,255,.6)}
+nav .btn{border-radius:3px;font-size:13px;padding:9px 20px}
+.stats{background:var(--navy);border:0;padding:38px 0}
+.stat{color:#9aa5b1;letter-spacing:.08em}
+.stat b{color:#fff;font-weight:600;font-size:40px}
+.stat small{color:var(--accent);font-weight:600}
+h2{font-size:34px;letter-spacing:.02em;margin-bottom:10px}
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:600;letter-spacing:.24em;color:var(--accent-deep);margin-bottom:12px}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.lead{font-size:15px}
+section{padding:96px 0}
+.card,.dt,.step,dl.co,form,ul.news{border-radius:6px}
+.ic{border-radius:6px;background:var(--navy)}
+.ic svg{stroke:var(--accent)}
+.card h3{font-weight:600}
+.pc:hover{box-shadow:0 14px 30px rgba(15,20,25,.12)}
+.cnt-tag{background:transparent;border:1px solid var(--line);color:var(--soft);border-radius:3px;font-weight:500;letter-spacing:.04em}
+ul.news .tag{background:var(--navy);color:#fff;border-radius:3px;font-weight:500;letter-spacing:.08em}
+.step::before{letter-spacing:.2em}
+dl.co dt{background:#efebe4}
+footer{background:#000;color:#9aa5b1;padding:36px 20px;letter-spacing:.05em}
+@media(max-width:860px){section{padding:64px 0}h2{font-size:28px}.stat b{font-size:26px}}
+@media(max-width:600px){section{padding:56px 0}.lt b{font-size:15px;letter-spacing:.06em}.lt small{font-size:9px}.hero{padding:64px 0}}
+@media(max-width:400px){.lt b{font-size:13px}.lt small{display:none}}
+/* ---- cart ---- */
+.dt li{align-items:center;gap:10px 20px}
+.dt li .nm{flex:1 1 260px;min-width:0}
+.dt li .nm strong{display:block}
+.dt li .nm span{display:block;font-size:13px;margin-top:2px}
+.buy{display:flex;align-items:center;gap:14px;flex:none}
+.price{font-family:"Zen Kaku Gothic New","Noto Sans JP",sans-serif;font-size:18px;font-weight:700;color:var(--navy);white-space:nowrap}
+.price small{font-size:11px;font-weight:500;color:var(--soft);margin-left:4px}
+.add{font:inherit;font-size:13px;font-weight:700;letter-spacing:.06em;padding:10px 18px;min-height:44px;border-radius:3px;border:1px solid var(--navy);background:var(--navy);color:#fff;cursor:pointer;transition:background .2s,border-color .2s}
+.add:hover{background:var(--accent);border-color:var(--accent)}
+.cart-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:0;background:none;color:var(--navy);cursor:pointer;border-radius:6px}
+.cart-btn:hover{color:var(--accent-deep)}
+.cart-btn svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.badge{position:absolute;top:2px;right:0;min-width:19px;height:19px;padding:0 5px;border-radius:999px;background:var(--accent);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;line-height:1}
+.badge[hidden]{display:none}
+.badge.bump{animation:bump .35s ease}
+@keyframes bump{50%{transform:scale(1.35)}}
+.m-only{display:none}
+.ov{position:fixed;inset:0;background:rgba(15,20,25,.55);opacity:0;visibility:hidden;transition:opacity .25s;z-index:40}
+.ov.on{opacity:1;visibility:visible}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(440px,100%);background:var(--bg);z-index:50;display:flex;flex-direction:column;transform:translateX(100%);visibility:hidden;transition:transform .3s ease,visibility .3s;box-shadow:-20px 0 50px rgba(0,0,0,.25)}
+.drawer.on{transform:none;visibility:visible}
+.dh{display:flex;align-items:center;justify-content:space-between;padding:18px 22px;border-bottom:1px solid var(--line);background:#fff}
+.dh h2{font-size:20px;margin:0}
+.x{width:44px;height:44px;border:0;background:none;cursor:pointer;color:var(--navy);display:flex;align-items:center;justify-content:center}
+.x svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round}
+.db{flex:1;overflow:auto;padding:8px 22px 20px}
+.df{border-top:1px solid var(--line);background:#fff;padding:16px 22px 20px}
+.empty{padding:48px 0;text-align:center;color:var(--soft)}
+.ci{display:grid;grid-template-columns:1fr auto;gap:6px 12px;padding:16px 0;border-bottom:1px solid var(--line)}
+.ci .n{font-weight:700;color:var(--navy);font-size:14px}
+.ci .u{font-size:12px;color:var(--soft)}
+.ci .lt2{font-weight:700;color:var(--navy);text-align:right}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:3px;background:#fff}
+.qty button{width:44px;height:44px;border:0;background:none;font-size:18px;cursor:pointer;color:var(--navy)}
+.qty button:hover{color:var(--accent-deep)}
+.qty span{min-width:30px;text-align:center;font-weight:700}
+.rm{border:0;background:none;color:var(--soft);font:inherit;font-size:12px;text-decoration:underline;cursor:pointer;min-height:44px;padding:0 6px}
+.ci .ctl{display:flex;align-items:center;gap:6px;grid-column:1/-1;justify-content:space-between}
+.sum{display:grid;grid-template-columns:1fr auto;gap:4px 0;font-size:14px;margin-bottom:14px}
+.sum .tt{font-weight:900;font-size:18px;color:var(--navy);border-top:1px solid var(--line);padding-top:8px;margin-top:4px}
+.sum .tt+*{border-top:1px solid var(--line);padding-top:8px;margin-top:4px}
+.df .btn,.db .btn{width:100%;text-align:center}
+.df .sub{display:block;width:100%;margin-top:8px;border:0;background:none;color:var(--soft);font:inherit;font-size:13px;text-decoration:underline;cursor:pointer;min-height:44px}
+.drawer form{background:none;border:0;padding:0;max-width:none;margin-top:12px}
+.drawer .warn{background:#fff6ee;border:1px solid #f1d3b8;border-radius:6px;padding:10px 12px;font-size:12px;color:#7a4a1f;margin-top:12px}
+.pay{display:flex;flex-direction:column;gap:8px}
+.pay label{display:flex;align-items:center;gap:10px;font-weight:500;color:var(--text);padding:12px 14px;border:1px solid var(--line);border-radius:6px;background:#fff;margin:0;min-height:44px;cursor:pointer}
+.pay input{width:auto}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--navy);color:#fff;font-size:13px;padding:12px 18px;border-radius:4px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:60;max-width:calc(100% - 32px)}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.done{padding:40px 0;text-align:center}
+.done h3{font-size:20px;color:var(--navy);margin-bottom:10px}
+.done p{font-size:14px;color:var(--soft)}
+@media(max-width:600px){.links .m-only{display:block}.buy{width:100%;justify-content:space-between}.dt li .nm{flex-basis:100%}}
+@media(max-width:440px){nav>.btn{display:none}}
+@media(prefers-reduced-motion:reduce){.drawer,.ov,.toast{transition:none}.badge.bump{animation:none}}
+@media(max-width:600px){.add{white-space:nowrap;padding:10px 14px;font-size:13px}.price small{display:block;margin:2px 0 0}.dt .btn{display:block;width:100%;text-align:center;padding:14px 12px;font-size:15px;letter-spacing:.04em}}
+</style>
+</head>
+<body>
+<div class="sample">これは架空の会社を題材にした、ホームページ制作のサンプルです。掲載内容はすべて架空です。</div>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l8 4.6v9.2l-8 4.6-8-4.6V7.4l8-4.6z"/><path d="M4 7.4l8 4.6 8-4.6M12 12v9.2"/></svg><span class="lt"><b>MINATO PACK</b><small>ミナトパック</small></span></a>
+    <nav aria-label="メインメニュー">
+      <div class="links" id="menu">
+        <a href="#strength">選ばれる理由</a>
+        <a href="#products">取扱商品</a>
+        <a href="#flow">ご注文の流れ</a>
+        <a href="#company">会社概要</a>
+        <a href="#contact" class="m-only">お問い合わせ</a>
+      </div>
+      <button class="cart-btn" id="cart-btn" type="button" aria-label="カートを開く(0点)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.6 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/></svg><span class="badge" id="cart-count" hidden>0</span></button>
+      <a class="btn" href="#contact">お問い合わせ</a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="bars" d="M4 7h16M4 12h16M4 17h16"/><path class="cross" d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-text">
+        <h1><span class="nb">テイクアウトの<em>「困った」</em>を、</span><span class="nb">容器から解決します。</span></h1>
+        <p>飲食店・テイクアウト店向けの食品容器を、小ロットから。在庫と出荷を自社で管理しているので、「明日必要」にも柔軟に対応します。</p>
+        <div class="cta">
+          <a class="btn" href="#contact">見積もりを相談する</a>
+          <a class="btn ghost" href="#products">取扱商品を見る</a>
+        </div>
+      </div>
+      <div class="slider" id="slider" aria-roledescription="スライドショー" aria-label="取扱商品の紹介">
+        <div class="slides">
+          <figure class="slide on"><img src="images/takeout.jpg" alt="紙のテイクアウト容器に入った料理" width="600" height="900"><figcaption>テイクアウト容器</figcaption></figure>
+          <figure class="slide"><img src="images/bento.jpg" alt="仕切り付きの弁当容器" width="600" height="900" loading="lazy"><figcaption>弁当容器</figcaption></figure>
+          <figure class="slide"><img src="images/cup.jpg" alt="ふた付きのドリンクカップ" width="900" height="825" loading="lazy"><figcaption>カップ・ドリンク容器</figcaption></figure>
+        </div>
+        <div class="dots" role="tablist" aria-label="スライドの切り替え">
+          <button type="button" class="dot on" aria-label="1枚目 テイクアウト容器"></button>
+          <button type="button" class="dot" aria-label="2枚目 弁当容器"></button>
+          <button type="button" class="dot" aria-label="3枚目 カップ"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="wrap grid g3">
+      <div class="stat"><b><span class="cnt" data-to="12">0</span><small>点</small></b>掲載商品数(架空)</div>
+      <div class="stat"><b><span class="cnt" data-to="1">0</span><small>ケースから</small></b>小ロット対応(架空)</div>
+      <div class="stat"><b>最短<span class="cnt" data-to="1">0</span><small>日</small></b>お届けまで(架空)</div>
+    </div>
+  </div>
+
+  <div class="svc">
+    <div class="wrap grid g4">
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></div><div><h3>午前中のご注文は最短翌日</h3><p>在庫のある商品が対象です(架空)。</p></div></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7M12 11v10"/></svg></div><div><h3>1ケースから注文OK</h3><p>開業直後のお店にも使いやすい量です。</p></div></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div><div><h3>無料サンプルあり</h3><p>容器の大きさや質感をご確認いただけます(架空)。</p></div></div>
+      <div class="card"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12h.01M18 12h.01"/></svg></div><div><h3>一定額以上で送料無料</h3><p>10,000円(税込)以上のご注文で送料無料です(架空)。</p></div></div>
+    </div>
+  </div>
+
+  <section id="strength">
+    <div class="wrap">
+      <span class="eyebrow">STRENGTH</span>
+      <h2>選ばれる3つの理由</h2>
+      <p class="lead">長年の物流の経験を、お届けの早さと正確さに生かしています。</p>
+      <div class="grid g3">
+        <div class="card"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7M12 11v10"/></svg></div><h3>小ロットから注文OK</h3><p>1ケースからお受けします。開業したばかりのお店や、新メニューの試作にも使いやすい量です。</p></div>
+        <div class="card"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></div><h3>最短で翌日お届け</h3><p>午前中のご注文は、在庫のある商品なら最短で翌日にお届けします(地域により異なります)。</p></div>
+        <div class="card"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><h3>在庫と出荷を一元管理</h3><p>在庫切れや発注漏れを防ぐ仕組みで運用しています。安定してお届けできます。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="alt">
+    <div class="wrap">
+      <span class="eyebrow">PRODUCTS</span>
+      <h2>取扱商品</h2>
+      <p class="lead">用途に合わせて、よく使われる容器をそろえています。</p>
+      <div class="grid g4">
+        <a class="card pc" href="#p1" data-p="弁当容器"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="10" rx="2"/><path d="M3 12h18M8 8V6M16 8V6"/></svg></div><h3>弁当容器</h3><p>仕切り付き・電子レンジ対応など、サイズ違いを多数ご用意しています。</p><span class="cnt-tag">掲載3点(架空)</span><span class="more">詳しく見る →</span></a>
+        <a class="card pc" href="#p2" data-p="カップ・ドリンク容器"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.5 12h-11L5 8z"/><path d="M4 8h16M7 8l1-4h8l1 4"/></svg></div><h3>カップ・ドリンク容器</h3><p>冷たい飲み物・温かい飲み物それぞれに対応した、カップとふたのセットです。</p><span class="cnt-tag">掲載3点(架空)</span><span class="more">詳しく見る →</span></a>
+        <a class="card pc" href="#p3" data-p="丼・スープ容器"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14a8 8 0 0 1 16 0v1H4v-1z"/><path d="M3 18h18M12 6V4"/></svg></div><h3>丼・スープ容器</h3><p>汁もれしにくい密閉タイプ。ラーメンや汁物のテイクアウトに向いています。</p><span class="cnt-tag">掲載3点(架空)</span><span class="more">詳しく見る →</span></a>
+        <a class="card pc" href="#p4" data-p="袋・包装資材"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18H6z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></div><h3>袋・包装資材</h3><p>持ち帰り用の袋、ナプキン、カトラリーなど、容器とあわせて一度に手配できます。</p><span class="cnt-tag">掲載3点(架空)</span><span class="more">詳しく見る →</span></a>
+      </div>
+    </div>
+  </section>
+  <section id="detail">
+    <div class="wrap">
+      <span class="eyebrow">LINEUP</span>
+      <h2>商品ラインナップ</h2>
+      <p class="lead">※ 商品名・仕様・価格はすべて架空の例です。カートに入れて、購入手続きまでお試しいただけます(実際の決済は行われません)。</p>
+      <article class="dt" id="p1">
+        <h3>弁当容器</h3>
+        <ul>
+          <li data-id="i1" data-name="仕切り付き弁当容器(大)" data-price="3980"><div class="nm"><strong>仕切り付き弁当容器(大)</strong><span>3仕切り / 電子レンジ対応 / 1ケース50枚入</span></div><div class="buy"><b class="price">&yen;3,980<small>/ケース(税込・架空)</small></b><button type="button" class="add">カートに入れる</button></div></li>
+          <li data-id="i2" data-name="仕切り付き弁当容器(小)" data-price="3480"><div class="nm"><strong>仕切り付き弁当容器(小)</strong><span>2仕切り / 電子レンジ対応 / 1ケース50枚入</span></div><div class="buy"><b class="price">&yen;3,480<small>/ケース(税込・架空)</small></b><button type="button" class="add">カートに入れる</button></div></li>
+          <li data-id="i3" data-name="無地の丼型弁当容器" data-price="3680"><div class="nm"><strong>無地の丼型弁当容器</strong><span>深型 / ふた付き / 1ケース50枚入</span></div><div class="buy"><b class="price">&yen;3,680<small>/ケース(税込・架空)</small></b><button type="button" class="add">カートに入れる</button></div></li>
+        </ul>
+        <a class="btn" href="#contact" data-q="弁当容器">この商品で見積もりを相談する</a>
+      </article>
+      <article class="dt" id="p2">
+        <h3>カップ・ドリンク容器</h3>
+        <ul>
+          <li data-id="i4" data-name="冷飲用カップ(M・L)" data-price="2980"><div class="nm"><strong>冷飲用カップ(M・L)</strong><span>透明 / ドーム型ふた付き / 1ケース100個入</span></div><div class="buy"><b class="price">&yen;2,980<small>/ケース(税込・架空)</small></b><button type="button" class="add">カートに入れる</button></div></li>
+          <li data-id="i5" data-name="温飲用ペーパーカップ" data-price="3480"><div class="nm"><strong>温飲用ペーパーカップ</strong><span>断熱タイプ / 飲み口付きふた / 1ケース100個入</span></div><div class="buy"><b class="price">&yen;3,480<small>/ケース(税込・架空)</small></b><button type="button" class="add">カートに入れる</button></div></li>
+          <li data-id="i6" data-name="ストロー・カップスリーブ" data-price="1480"><div class="nm"><strong>ストロー・カップスリーブ</strong><span>単品でも注文できます</span></div><div class="buy"><b class="price">&yen;1,480<small>/ケース(税込・架空)</small></b><button type="button" class="add">カートに入れる</button></div></li>
+        </ul>
+        <a class="btn" href="#contact" data-q="カップ・ドリンク容器">この商品で見積もりを相談する</a>
+      </article>
+      <article class="dt" id="p3">
+        <h3>丼・スープ容器</h3>
+        <ul>
+          <li data-id="i7" data-name="密閉スープ容器(中)" data-price="3280"><div class="nm"><strong>密閉スープ容器(中)</strong><span>汁もれしにくい / 電子レンジ対応 / 1ケース50個入</span></div><div class="buy"><b class="price">&yen;3,280<small>/ケース(税込・架空)</small></b><button type="button" class="add">カートに入れる</button></div></li>
+          <li data-id="i8" data-name="丼容器(大)" data-price="3880"><div class="nm"><strong>丼容器(大)</strong><span>ふた付き / 麺類・丼もの向け / 1ケース50個入</span></div><div class="buy"><b class="price">&yen;3,880<small>/ケース(税込・架空)</small></b><button type="button" class="add">カートに入れる</button></div></li>
+          <li data-id="i9" data-name="ミニカップ容器" data-price="1980"><div class="nm"><strong>ミニカップ容器</strong><span>薬味・たれ用 / 1ケース200個入</span></div><div class="buy"><b class="price">&yen;1,980<small>/ケース(税込・架空)</small></b><button type="button" class="add">カートに入れる</button></div></li>
+        </ul>
+        <a class="btn" href="#contact" data-q="丼・スープ容器">この商品で見積もりを相談する</a>
+      </article>
+      <article class="dt" id="p4">
+        <h3>袋・包装資材</h3>
+        <ul>
+          <li data-id="i10" data-name="持ち帰り用レジ袋" data-price="2480"><div class="nm"><strong>持ち帰り用レジ袋</strong><span>サイズ違いあり / 1ケース1000枚入</span></div><div class="buy"><b class="price">&yen;2,480<small>/ケース(税込・架空)</small></b><button type="button" class="add">カートに入れる</button></div></li>
+          <li data-id="i11" data-name="ナプキン・おしぼり" data-price="1780"><div class="nm"><strong>ナプキン・おしぼり</strong><span>業務用 / 1ケース各種</span></div><div class="buy"><b class="price">&yen;1,780<small>/ケース(税込・架空)</small></b><button type="button" class="add">カートに入れる</button></div></li>
+          <li data-id="i12" data-name="使い捨てカトラリー" data-price="2280"><div class="nm"><strong>使い捨てカトラリー</strong><span>スプーン・フォーク・箸 / 個包装あり</span></div><div class="buy"><b class="price">&yen;2,280<small>/ケース(税込・架空)</small></b><button type="button" class="add">カートに入れる</button></div></li>
+        </ul>
+        <a class="btn" href="#contact" data-q="袋・包装資材">この商品で見積もりを相談する</a>
+      </article>
+    </div>
+  </section>
+
+
+  <section id="flow">
+    <div class="wrap">
+      <span class="eyebrow">FLOW</span>
+      <h2>ご注文の流れ</h2>
+      <p class="lead">はじめての方も、4ステップで迷わずご注文いただけます。</p>
+      <div class="steps">
+        <div class="step"><h3>お問い合わせ</h3><p>フォームからご希望の商品や数量をお知らせください。</p></div>
+        <div class="step"><h3>お見積もり</h3><p>内容を確認し、金額と納期を担当者がご連絡します。</p></div>
+        <div class="step"><h3>ご注文・ご入金</h3><p>内容にご納得いただけたら、正式にご注文ください。</p></div>
+        <div class="step"><h3>商品のお届け</h3><p>検品のうえ出荷し、ご指定の場所へお届けします。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="news" class="alt">
+    <div class="wrap">
+      <span class="eyebrow">NEWS</span>
+      <h2>お知らせ</h2>
+      <p class="lead">※ 日付・内容はすべて架空です。</p>
+      <ul class="news">
+        <li><time datetime="2026-10-20">2026.10.20</time><span class="tag">商品</span><span class="t">ハロウィン向けのテイクアウト容器を追加しました。</span></li>
+        <li><time datetime="2026-10-10">2026.10.10</time><span class="tag">営業</span><span class="t">年末の出荷スケジュールをお知らせします。</span></li>
+        <li><time datetime="2026-10-01">2026.10.01</time><span class="tag">サービス</span><span class="t">無料サンプルのお申し込みを開始しました。</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="company">
+    <div class="wrap">
+      <span class="eyebrow">COMPANY</span>
+      <h2>会社概要</h2>
+      <p class="lead">※ 架空の情報です。</p>
+      <dl class="co">
+        <dt>会社名</dt><dd>MINATO PACK(ミナトパック・架空)</dd>
+        <dt>事業内容</dt><dd>食品容器・包装資材の卸売</dd>
+        <dt>所在地</dt><dd>〇〇県〇〇市〇〇町1-2-3(架空)</dd>
+        <dt>営業時間</dt><dd>平日 9:00〜17:30(土日祝は休業)</dd>
+        <dt>お問い合わせ</dt><dd>このページのフォームからお願いします</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <span class="eyebrow">CONTACT</span>
+      <h2>お問い合わせ</h2>
+      <p class="lead">見積もりのご相談も、お気軽にどうぞ。2営業日以内にご連絡します。</p>
+      <form id="form" novalidate>
+        <div class="f"><label for="name">お名前<span class="req">必須</span></label><input id="name" name="name" autocomplete="name"><div class="err" id="e-name"></div></div>
+        <div class="f"><label for="shop">店名・会社名</label><input id="shop" name="shop" autocomplete="organization"></div>
+        <div class="f"><label for="mail">メールアドレス<span class="req">必須</span></label><input id="mail" name="mail" type="email" autocomplete="email"><div class="err" id="e-mail"></div></div>
+        <div class="f"><label for="kind">ご相談内容<span class="req">必須</span></label>
+          <select id="kind" name="kind"><option value="">選択してください</option><option>見積もりの依頼</option><option>商品について</option><option>納期について</option><option>その他</option></select><div class="err" id="e-kind"></div></div>
+        <div class="f"><label for="msg">内容<span class="req">必須</span></label><textarea id="msg" name="msg"></textarea><div class="err" id="e-msg"></div></div>
+        <button class="btn" type="submit">送信する</button>
+        <p class="note">サンプルのため、実際には送信されません。入力内容のチェックと、送信後の表示の動きをご確認いただけます。</p>
+        <div class="thanks" id="thanks" role="status">送信ありがとうございました(サンプル表示です)。実際のサイトでは、ここで内容をお預かりし、担当者から折り返しご連絡します。</div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>© MINATO PACK(ミナトパック・架空) / ホームページ制作サンプル<br><small>写真:<a href="https://unsplash.com/photos/xmibn7mzXV0" target="_blank" rel="noopener">Ambitious Studio* | Rick Barrett</a>、<a href="https://unsplash.com/photos/oVWgSI5GUTA" target="_blank" rel="noopener">Alexey Demidov</a>、<a href="https://unsplash.com/photos/FWIV8I2h-s0" target="_blank" rel="noopener">Ambo Ampeng</a>、<a href="https://unsplash.com/photos/xT-OoC3Zg_c" target="_blank" rel="noopener">Clair</a>(Unsplash)</small><br><a href="https://portfolio-v2-one-mocha.vercel.app">制作者のポートフォリオに戻る</a></footer>
+
+<div class="ov" id="ov"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true">
+  <div class="dh"><h2 id="cart-title">カート</h2><button type="button" class="x" data-act="close" aria-label="カートを閉じる"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="db" id="cart-body"></div>
+  <div class="df" id="cart-foot"></div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var hd = document.querySelector('header'), btn = document.getElementById('menu-btn'), menu = document.getElementById('menu');
+  function setOpen(o){ hd.classList.toggle('open', o); btn.setAttribute('aria-expanded', o ? 'true' : 'false'); btn.setAttribute('aria-label', o ? 'メニューを閉じる' : 'メニューを開く'); }
+  btn.addEventListener('click', function(){ setOpen(!hd.classList.contains('open')); });
+  menu.addEventListener('click', function(e){ if(e.target.tagName === 'A') setOpen(false); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') setOpen(false); });
+  window.matchMedia('(min-width: 601px)').addEventListener('change', function(){ setOpen(false); });
+})();
+</script>
+<script>
+(function(){
+  var f = document.getElementById('form'), th = document.getElementById('thanks');
+  document.querySelectorAll('[data-q]').forEach(function(a){
+    a.addEventListener('click', function(){
+      var q = a.getAttribute('data-q'), m = f.elements['msg'];
+      f.elements['kind'].value = '見積もりの依頼';
+      if(!m.value) m.value = '「' + q + '」について、見積もりをお願いします。';
+    });
+  });
+  /* slider */
+  var sl = document.getElementById('slider'), slides = sl.querySelectorAll('.slide'), dots = sl.querySelectorAll('.dot'), cur = 0, timer;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* catchcopy: char rise + marker */
+  var h1 = document.querySelector('.hero h1');
+  if(h1 && !reduce){
+    var n = 0, label = h1.textContent;
+    (function split(node){
+      Array.prototype.slice.call(node.childNodes).forEach(function(c){
+        if(c.nodeType === 3){
+          var f = document.createDocumentFragment();
+          c.textContent.split('').forEach(function(ch){
+            var sp = document.createElement('span'); sp.className = 'ch'; sp.setAttribute('aria-hidden', 'true');
+            sp.style.setProperty('--i', n++); sp.textContent = ch; f.appendChild(sp);
+          });
+          node.replaceChild(f, c);
+        } else if(c.nodeType === 1){ split(c); }
+      });
+    })(h1);
+    h1.setAttribute('aria-label', label);
+    h1.style.setProperty('--md', (n * 45 + 250) + 'ms');
+    h1.classList.add('anim');
+  }
+  function show(i){
+    cur = (i + slides.length) % slides.length;
+    slides.forEach(function(el, k){ el.classList.toggle('on', k === cur); });
+    dots.forEach(function(el, k){ el.classList.toggle('on', k === cur); });
+  }
+  function play(){ if(!reduce){ clearInterval(timer); timer = setInterval(function(){ show(cur + 1); }, 4000); } }
+  dots.forEach(function(d, k){ d.addEventListener('click', function(){ show(k); play(); }); });
+  sl.addEventListener('mouseenter', function(){ clearInterval(timer); });
+  sl.addEventListener('mouseleave', play);
+  play();
+  /* count up + reveal */
+  function count(el){
+    var to = +el.getAttribute('data-to'), t0 = null;
+    if(reduce){ el.textContent = to; return; }
+    function tick(t){ if(!t0) t0 = t; var p = Math.min((t - t0) / 1200, 1); el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3))); if(p < 1) requestAnimationFrame(tick); }
+    requestAnimationFrame(tick);
+  }
+  document.querySelectorAll('.card,.step,.dt,dl.co,form').forEach(function(el){ el.classList.add('rv'); });
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){
+      if(!e.isIntersecting) return; e.target.classList.add('in');
+      e.target.querySelectorAll('.cnt').forEach(count); io.unobserve(e.target);
+    }); }, {threshold:.15});
+    document.querySelectorAll('.rv,.stats').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('in'); });
+    document.querySelectorAll('.cnt').forEach(count);
+  }
+  function set(id, m){ document.getElementById('e-'+id).textContent = m; return !m; }
+  f.addEventListener('submit', function(e){
+    e.preventDefault(); th.style.display = 'none';
+    var v = function(id){ return f.elements[id].value.trim(); };
+    var ok = [
+      set('name', v('name') ? '' : 'お名前を入力してください'),
+      set('mail', !v('mail') ? 'メールアドレスを入力してください' : (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v('mail')) ? '' : 'メールアドレスの形式が正しくありません')),
+      set('kind', v('kind') ? '' : 'ご相談内容を選択してください'),
+      set('msg', v('msg') ? '' : '内容を入力してください')
+    ].every(Boolean);
+    if(ok){ th.style.display = 'block'; f.reset(); }
+  });
+})();
+</script>
+<script>
+(function(){
+  var KEY = 'minato-pack-cart-v1', FREE = 10000, SHIP = 800;
+  var cat = {};
+  document.querySelectorAll('li[data-id]').forEach(function(li){ cat[li.getAttribute('data-id')] = { name: li.getAttribute('data-name'), price: +li.getAttribute('data-price') }; });
+  var cart = {};
+  try { var raw = JSON.parse(localStorage.getItem(KEY)); if(raw && typeof raw === 'object') cart = raw; } catch(e){}
+  Object.keys(cart).forEach(function(k){ var q = Math.floor(+cart[k]); if(!cat[k] || !(q > 0)) delete cart[k]; else cart[k] = Math.min(q, 99); });
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(cart)); } catch(e){} }
+  var yen = function(n){ return '¥' + n.toLocaleString('ja-JP'); };
+  var dr = document.getElementById('drawer'), ov = document.getElementById('ov'), bd = document.getElementById('cart-body'), ft = document.getElementById('cart-foot');
+  var cb = document.getElementById('cart-btn'), cc = document.getElementById('cart-count'), toast = document.getElementById('toast');
+  var view = 'cart', tt;
+  function totals(){ var sub = 0, n = 0; Object.keys(cart).forEach(function(k){ sub += cat[k].price * cart[k]; n += cart[k]; }); var ship = (sub === 0 || sub >= FREE) ? 0 : SHIP; return { sub: sub, n: n, ship: ship, total: sub + ship }; }
+  function sumHtml(t){ return '<div class="sum"><span>小計</span><span>' + yen(t.sub) + '</span><span>送料' + (t.sub >= FREE ? '(10,000円以上で無料)' : '(10,000円未満)') + '</span><span>' + yen(t.ship) + '</span><span class="tt">合計(税込)</span><span class="tt">' + yen(t.total) + '</span></div>'; }
+  function render(){
+    var t = totals();
+    cc.textContent = t.n; cc.hidden = t.n === 0;
+    cb.setAttribute('aria-label', 'カートを開く(' + t.n + '点)');
+    if(view === 'done'){
+      bd.innerHTML = '<div class="done"><h3>ご注文ありがとうございます(サンプル表示)</h3><p>これは制作サンプルです。実際には注文は確定せず、決済も行われていません。</p></div>';
+      ft.innerHTML = '<button type="button" class="btn" data-act="close">閉じる</button>'; return;
+    }
+    if(t.n === 0){
+      view = 'cart';
+      bd.innerHTML = '<p class="empty">カートは空です。<br>商品ラインナップから商品を追加してください。</p>';
+      ft.innerHTML = '<a class="btn" href="#detail" data-act="close">商品を見る</a>'; return;
+    }
+    if(view === 'checkout'){
+      bd.innerHTML = sumHtml(t).replace('class="sum"', 'class="sum" style="margin-top:14px"') +
+        '<div class="warn">サンプルです。実際の氏名・住所・カード番号は入力しないでください。入力内容は保存も送信もされません。</div>' +
+        '<form id="co" novalidate>' +
+        '<div class="f"><label for="c-name">お名前(架空でOK)<span class="req">必須</span></label><input id="c-name" autocomplete="off"><div class="err" id="ce-name"></div></div>' +
+        '<div class="f"><label for="c-mail">メールアドレス(架空でOK)<span class="req">必須</span></label><input id="c-mail" type="email" autocomplete="off"><div class="err" id="ce-mail"></div></div>' +
+        '<div class="f"><label for="c-addr">お届け先(架空でOK)</label><input id="c-addr" autocomplete="off"></div>' +
+        '<div class="f"><label>お支払い方法(サンプル)</label><div class="pay"><label><input type="radio" name="pay" value="invoice" checked>請求書払い(月末締め・架空)</label><label><input type="radio" name="pay" value="card">クレジットカード(架空・カード番号は入力しません)</label></div></div>' +
+        '<button class="btn" type="submit">注文を確定する(架空)</button></form>';
+      ft.innerHTML = '<button type="button" class="sub" data-act="back">カートに戻る</button>'; return;
+    }
+    var h = '';
+    Object.keys(cart).forEach(function(k){
+      var c = cat[k], q = cart[k];
+      h += '<div class="ci" data-k="' + k + '"><div><div class="n">' + c.name + '</div><div class="u">' + yen(c.price) + ' / ケース(税込・架空)</div></div><div class="lt2">' + yen(c.price * q) + '</div>' +
+        '<div class="ctl"><div class="qty"><button type="button" data-act="dec" aria-label="' + c.name + 'の数量を減らす">&minus;</button><span aria-live="polite">' + q + '</span><button type="button" data-act="inc" aria-label="' + c.name + 'の数量を増やす">+</button></div><button type="button" class="rm" data-act="rm">削除</button></div></div>';
+    });
+    bd.innerHTML = h;
+    ft.innerHTML = sumHtml(t) + '<button type="button" class="btn" data-act="checkout">購入手続きへ</button><button type="button" class="sub" data-act="close">買い物を続ける</button><p class="note" style="text-align:center">サンプルのため、実際の決済は行われません。</p>';
+  }
+  var lastFocus = null;
+  function open(){ lastFocus = document.activeElement; view = 'cart'; render(); dr.classList.add('on'); ov.classList.add('on'); dr.setAttribute('aria-hidden', 'false'); document.body.style.overflow = 'hidden'; var x = dr.querySelector('.x'); if(x) x.focus(); }
+  function close(){ dr.classList.remove('on'); ov.classList.remove('on'); dr.setAttribute('aria-hidden', 'true'); document.body.style.overflow = ''; if(view === 'done') view = 'cart'; (lastFocus && lastFocus.focus) ? lastFocus.focus() : cb.focus(); }
+  function say(msg){ toast.textContent = msg; toast.classList.add('on'); clearTimeout(tt); tt = setTimeout(function(){ toast.classList.remove('on'); }, 2200); }
+  cb.addEventListener('click', open);
+  ov.addEventListener('click', close);
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && dr.classList.contains('on')) close(); });
+  document.querySelectorAll('.add').forEach(function(b){
+    b.addEventListener('click', function(){
+      var li = b.closest('li'), k = li.getAttribute('data-id');
+      cart[k] = Math.min((cart[k] || 0) + 1, 99); save(); render();
+      cc.classList.remove('bump'); void cc.offsetWidth; cc.classList.add('bump');
+      say('「' + cat[k].name + '」をカートに追加しました');
+    });
+  });
+  dr.addEventListener('click', function(e){
+    var a = e.target.closest('[data-act]'); if(!a) return;
+    var act = a.getAttribute('data-act'), row = a.closest('.ci'), k = row && row.getAttribute('data-k');
+    if(act === 'close') { if(a.tagName === 'A') { close(); } else close(); }
+    else if(act === 'inc'){ cart[k] = Math.min(cart[k] + 1, 99); save(); render(); }
+    else if(act === 'dec'){ cart[k] = cart[k] - 1; if(cart[k] <= 0) delete cart[k]; save(); render(); }
+    else if(act === 'rm'){ delete cart[k]; save(); render(); }
+    else if(act === 'checkout'){ view = 'checkout'; render(); }
+    else if(act === 'back'){ view = 'cart'; render(); }
+  });
+  dr.addEventListener('submit', function(e){
+    if(e.target.id !== 'co') return; e.preventDefault();
+    var n = document.getElementById('c-name').value.trim(), m = document.getElementById('c-mail').value.trim();
+    var en = n ? '' : 'お名前を入力してください';
+    var em = !m ? 'メールアドレスを入力してください' : (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m) ? '' : 'メールアドレスの形式が正しくありません');
+    document.getElementById('ce-name').textContent = en; document.getElementById('ce-mail').textContent = em;
+    if(en || em) return;
+    cart = {}; save(); view = 'done'; render();
+  });
+  render();
+})();
+</script>
+</body>
+</html>

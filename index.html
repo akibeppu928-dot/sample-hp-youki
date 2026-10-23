@@ -87,6 +87,7 @@ h1,h2,h3,.logo,.btn,.more,.step::before,.eyebrow{font-family:"Zen Kaku Gothic Ne
 .hero h1{font-weight:900;font-size:clamp(24px,3.4vw,36px);line-height:1.5;letter-spacing:.01em;text-shadow:0 2px 14px rgba(0,0,0,.25)}
 .hero h1 em{font-style:normal;color:#ffb066;background:linear-gradient(transparent 72%,rgba(224,122,47,.55) 72%);padding:0 .1em}
 .nb{display:block}
+.hero h1 .ph{display:inline-block}
 .hero h1.anim .ch{display:inline-block;opacity:0;transform:translateY(.7em);animation:rise .6s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--i) * 45ms)}
 .hero h1.anim em{color:#fff;background:linear-gradient(rgba(224,122,47,.6),rgba(224,122,47,.6)) no-repeat left 94%/0% 30%;animation:mark .7s ease-out forwards,hl .5s ease-out forwards;animation-delay:var(--md),var(--md)}
 @keyframes rise{to{opacity:1;transform:none}}
@@ -295,7 +296,7 @@ footer{background:#000;color:#9aa5b1;padding:36px 20px;letter-spacing:.05em}
   <div class="hero">
     <div class="wrap hero-in">
       <div class="hero-text">
-        <h1><span class="nb">テイクアウトの<em>「困った」</em>を、</span><span class="nb">容器から解決します。</span></h1>
+        <h1><span class="nb"><span class="ph">テイクアウトの</span><span class="ph"><em>「困った」</em>を、</span></span><span class="nb"><span class="ph">容器から</span><span class="ph">解決します。</span></span></h1>
         <p>飲食店・テイクアウト店向けの食品容器を、小ロットから。在庫と出荷を自社で管理しているので、「明日必要」にも柔軟に対応します。</p>
         <div class="cta">
           <a class="btn" href="#contact">見積もりを相談する</a>
